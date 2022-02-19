@@ -19,8 +19,7 @@
             <div id="heading" class="btn btn-warning">
                 <h3>Ping Pong</h3>
                 <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Instructions</button>
-            
-            </div> 
+             </div> 
              <br>
             <br>      
               <button class="btn btn-success" onclick="gameStart()" id="start">Play Game</button>
@@ -28,9 +27,28 @@
               <br>
               <h3 id="status" class="btn btn-warning"></h3>
               <br>
-              <br>
-         
+              <br>         
               <div id="canvas"></div>
+              <br>
+              <div id="myModal" class="modal fade">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button class="close" data-dismiss="modal">&times;</button>
+                              <h3>Instructions</h3>
+                          </div>
+                          <div class="modal-body">
+                              <ol>
+                                  <li>Press the "Play Game" button to Start.</li>
+                                  <li>Move your pointer on the canvas to move your paddle.</li>
+                                  <li>Press the Restart button to Restart the Game.</li>
+                              </ol>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <button class="btn btn-danger">Restart</button>
         </center>
 
 
