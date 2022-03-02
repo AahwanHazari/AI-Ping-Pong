@@ -20,7 +20,19 @@ var ball = {
 
 function setup(){
   var canvas =  createCanvas(700,600);
+  canvas.parent('canvas');
+
+  video = createCapture(VIDEO);
+  video.size(800, 400);
+  video.parent('game_console');
+
+  image("game_console", 0, 0, 700, 600);
+
+  poseNet = ml5.posenet(video, modelLoaded);
+  poseNet.on(pose, gotPoses);  
 }
+
+
 
 
 function draw(){
